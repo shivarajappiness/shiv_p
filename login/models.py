@@ -7,7 +7,7 @@ class puser(models.Model):
     name = models.CharField(max_length=30)
     email = models.EmailField(default=None)
     mobile = models.CharField(max_length=12)
-    # file = forms.FileField()
+    file = forms.FileField()
     model_pic = models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
     resume = models.ImageField(upload_to = 'resume/', default = 'resume/None/no-img.jpg')
     timestamp = models.DateTimeField(auto_now_add=True)
